@@ -1,16 +1,22 @@
-# pr7_pks
+# Практическая работа №7 по Программированию корпоративных систем
 
-A new Flutter project.
+## Мрясова Анастасия Александровна ЭФБО-01-22
 
-## Getting Started
+Суть этой практической работы заключалась в том, чтобы сверстать приложение по макету Figma. Макет:
 
-This project is a starting point for a Flutter application.
+![image](https://github.com/user-attachments/assets/7cf7ba6b-14f1-48c6-be6b-90341f459b4c)
 
-A few resources to get you started if this is your first Flutter project:
+### Ход работы:
+* Были созданы модели для Профиля пользователя, Услуги и Товара в корзине
+* Помимо страниц Корзина, Главная и Профиль, были созданы компоненты - Карточка услуги в корзине, Карточка услуги на главной странице и Счетчик для корзины
+* Для соглсования существительных с числительными был использован пакет intl, функции для склонения существительных вынесены в файл utils.dart
+* Для подключения картинок подключила assets: assets/images
+* Для шрифтов - google_fonts, для работы с SVG файлами - flutter_svg
+* В ходе работы, я столкнулась с проблемой: высота экрана эмулятора больше, чем высота в прототипе. Поэтому для позиционирования кнопки "Перейти к оформлению заказа" на странице Корзины была использована формула. Если товаров в корзине не больше 3, то верхний отступ до кнопки высчитывается следующим образом: Высота устройства - Высота навигационной панели - Высота блока с названием страницы - Высота блока с суммой - Отступ под кнопкой - Высота кнопки - (Паддинги сверрху и снизу + Высота карточки товара) * Количество товаров
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Результат
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://github.com/user-attachments/assets/8577a8d5-2033-4335-b90e-9ea7942c9247
+
+
+
